@@ -13,7 +13,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server, {
   cors: {
-    origin: "https://wa-client-seven.vercel.app/",
+    origin: "https://wa-client-seven.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
@@ -22,7 +22,7 @@ const io = socketIO(server, {
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: "https://wa-client-seven.vercel.app/",
+  origin: "https://wa-client-seven.vercel.app",
   methods: ["GET", "POST"],
   credentials: true,
 }));
